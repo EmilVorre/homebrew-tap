@@ -5,21 +5,21 @@
 class Yard < Formula
   desc "CLI for Trainyard — ephemeral Kubernetes PR preview environments"
   homepage "https://github.com/Emilvorre/trainyard"
-  version "1.1.1"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.1/yard_darwin_amd64.tar.gz"
-      sha256 "5ef654e9b10f250299dd9f54cc427ef851ce0bc4c54cde6ddb4702c1fc81b338"
+      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.2/yard_darwin_amd64.tar.gz"
+      sha256 "b7543ced527018bdc5c5b443d2e444bd85614d6460f28c498e30eca84e8575d1"
 
       define_method(:install) do
         bin.install "yard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.1/yard_darwin_arm64.tar.gz"
-      sha256 "c928652c5e0c395041b85ee1f1b7c2cab67dbc416e270f370b16286de8409293"
+      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.2/yard_darwin_arm64.tar.gz"
+      sha256 "4593c70a037fa9be3ef9f08fdbbaf0d24b41b78b9056614e3881d81f903e3b75"
 
       define_method(:install) do
         bin.install "yard"
@@ -29,15 +29,15 @@ class Yard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.1/yard_linux_amd64.tar.gz"
-      sha256 "4371a6fb7f4e018631edd96c7da4da0d9e131ba7b9cd7042be505f9329a342a0"
+      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.2/yard_linux_amd64.tar.gz"
+      sha256 "72c6bcd08c247b6157760f0cdd8ae2ac2dc2a9b0de4cb51297ca02cb0a17e0cb"
       define_method(:install) do
         bin.install "yard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.1/yard_linux_arm64.tar.gz"
-      sha256 "65fde290a86899d1ab7e1cae934b46e6238797cec329e5bfaa68ebc20ef352c3"
+      url "https://github.com/Emilvorre/trainyard/releases/download/v1.1.2/yard_linux_arm64.tar.gz"
+      sha256 "008168b39d40833c0196ae22e47797eb9fd231aaaf4149e2d196c8f5273f17b4"
       define_method(:install) do
         bin.install "yard"
       end
